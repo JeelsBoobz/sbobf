@@ -117,7 +117,7 @@
       
       var a=(document.querySelector("a") || document.createElement("a"));
       
-      a.download=Math.random()+"_obf.sh"
+      a.download=Math.floor(Date.now()/1000)+"_obf.sh"
       a.href="data:application/octet-stream,"+r;
       if(document.querySelector("a") !== null) return;
       a.appendChild(document.createTextNode("download"));
